@@ -1,0 +1,17 @@
+{
+  "name": "etcd_cached",
+  "version": "1.0.0",
+  "description": "Cached access to etcd",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Iddo Gino",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "node-cache": "^3.2.1",
+    "request": "^2.72.0"
+  }
+}
