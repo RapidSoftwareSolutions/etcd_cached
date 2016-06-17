@@ -34,7 +34,7 @@ class EtcdCache {
         this.ETCD_URL = baseURL;
         this.ttl = ttl;
 
-        this.cache = new NodeCache({ stdTTL: 60, checkperiod: 60 });
+        this.cache = new NodeCache({ stdTTL: this.ttl, checkperiod: this.ttl });
     }
 
     register(key, value, cb) {

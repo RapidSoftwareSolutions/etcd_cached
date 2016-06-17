@@ -1,6 +1,6 @@
 {
   "name": "etcd_cached",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cached access to etcd",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,9 @@
     "mocha": "^2.5.3",
     "node-cache": "^3.2.1",
     "request": "^2.72.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RapidSoftwareSolutions/etcd_cached.git"
   }
 }
