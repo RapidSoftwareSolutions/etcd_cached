@@ -74,18 +74,3 @@ class EtcdCache {
 }
 
 module.exports = EtcdCache;
-
-/** DEMO **/
-var e = new EtcdCache("https://root:NMGNDTFJAPXJQKGZ@aws-us-east-1-portal.15.dblayer.com:11188/v2/keys/", 30);
-e.register("1", "a", function(err) {
-    console.warn(err);
-    e.get("1", function(val, err) {
-        console.log(val);
-        e.deRegister("1", function(err) {
-            console.warn(err);
-            e.get("1", function(val, err) {
-                console.log(val);
-            });
-        });
-    });
-});
